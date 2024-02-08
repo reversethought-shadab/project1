@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.container{
+height: 100%;
+width: 100%;
+background-color: #fff;
+}
+nav{
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 100%;
+/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+nav ul {
+    display: flex;
+    padding-right:40px ;
+    gap: 20px;
+}
+li a{
+    font-size: 20px;
+    color: #000;
+}
+nav i{
+    background-color: #000;
+    color: #fff;
+    padding: 9px;
+    border-radius: 50%;
+}
+.hero{
+padding: 40px 100px;
+}
+  .hero h1{
+    color: #000;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    line-height: 5rem;
+    font-weight: 500;
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+.cart p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.cart-item{
+    width: 25%;
+}
+.cart-item .cta{
+    padding: 12px 0;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    color: #000 !important;
+}
+.cart-item .cta a{
+    font-size: 1.3rem;
+    color: #000;
+}
+.cart-item .cta i{
+    font-size: 1.3rem;
+    opacity: 0;
+}
+.cta:hover i{
+opacity: 1;
+}
+.cta:hover a{
+text-decoration: underline;
+}
+.image-container{
+    height: 60%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1554412664-6a4d8f640b3b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+@media (max-width: 991px) {
+    .cart{
+        display: block;
+    }
+    .cart-item{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .hero h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .hero{
+        padding: 20px;
+    }
+    .cart-item{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
